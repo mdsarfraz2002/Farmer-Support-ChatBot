@@ -75,6 +75,5 @@ This collaborative effort is led by a dedicated team of four individuals:
 -   **N Adil**
 -   **Ananya S M**
 -   **Kavya Kartik**
--   **Md Sarfraz Alam**
 
 This project is a capstone project developed as a final-year project. The Farmer Support ChatBot aims to assist farmers by providing real-time solutions and advice on various farming issues. It leverages AI and machine learning to provide accurate and timely responses. Various tutorials and resources on chatbot development, language translation, and real-time communication inspire the code and techniques used in this project.
