@@ -11,6 +11,7 @@ from keras.optimizers import SGD
 import random
 from nltk.stem import WordNetLemmatizer
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 lemma = WordNetLemmatizer()

@@ -1,0 +1,16 @@
+FROM ubuntu:latest
+
+# Install dependencies
+RUN apt-get update -y && \
+    apt-get install -y python3-pip python3-dev build-essential python3-venv
+
+# Set up the backend directory
+COPY backend /backend
+WORKDIR /backend
+
+#install dependencies
+
+RUN pip install -r requirements.txt --break-system-packages
+
+# Start the application using Python interpreter
+CMD ["python3", "chat.py"]

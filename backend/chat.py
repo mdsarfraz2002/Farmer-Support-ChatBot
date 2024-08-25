@@ -12,6 +12,12 @@ from googletrans import Translator  # Import Translator from googletrans module
 from flask import Flask
 from flask_socketio import SocketIO, emit
 
+#download
+# nltk.download('punkt')
+# nltk.download('wordnet')
+# nltk.download('omw-1.4')
+
+
 lemma = WordNetLemmatizer()
 model = load_model('model.h5')
 intents = json.loads(open('intents.json').read())
@@ -73,7 +79,8 @@ def chatbotResponse(msg, source_language):
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 app.static_folder = 'static'
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, async_mode='eventlet', cors_allowed_origins="*")
+
 
 # Creating the socket connection
 @socketio.on('message')
@@ -85,4 +92,5 @@ def handle_message(data):
 
 # Running the app
 if __name__ == "__main__":
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', debug=True)
+
