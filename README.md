@@ -10,61 +10,41 @@ In this repository, you'll find a Flask backend (`chat.py`), a React frontend (`
 
 ## Installation
 
-To run the code in this project, ensure you have the following dependencies:
+To run the project using Docker Compose, follow the steps below:
 
-- Python 3
-- Flask
-- React
-- Socket IO
-- SpeechRecognition (for speech recognition)
-- Googletrans (for language translation)
+# Prerequisites
+Ensure you have Docker and Docker Compose installed on your machine. You can install Docker and Docker Compose.
 
-You can install the required Python packages using the following commands:
+## Running the Application
 
+# Clone the Repository:
 ```bash
- pip install flask flask-socketio speechrecognition googletrans==4.0.0-rc1 nltk keras tensorflow
+ git clone https://github.com/adil200/Farmer-Support-ChatBot.git
+ cd Farmer-Support-ChatBot
 ```
-
-For the React frontend, navigate to the `frontend` directory and run:
-
+# Build and Run the Containers:
+In the project directory, run the following command to build and start the services:
 ```bash
-npm install
+ docker-compose up --build
 ```
+This command will:
 
-## Usage
+Build the Docker images for both the backend and frontend.
+Start the Flask backend on port 5000.
+Start the React frontend on port 5173.
 
-1. Clone this repository:
+# Access the Application:
+Once the containers are up and running, you can access the application by navigating to:
 
-```bash
-git clone https://github.com/your-username/Farmer-Support-ChatBot.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd Farmer-Support-ChatBot
-```
-
-3. Run the Flask backend:
-
-```bash
-python chat.py
-```
-
-4. Run the React frontend:
-
-```bash
-npm run build
-npm run dev
-```
-
-5. Open your browser and access `http://localhost:5173/` to interact with the Farmer Support ChatBot.
+Frontend: http://localhost:5173
+Backend: http://localhost:5000
 
 ## Features
 
 - Language Translation: The chatbot supports multiple languages for user convenience.
 - Speech Recognition: Users can interact with the chatbot using voice commands.
 - Real-time Communication: Utilizes Socket IO for seamless real-time communication.
+- Dockerization: The application is containerized using Docker for easy deployment and scaling.
 
 ## Acknowledgments
 
