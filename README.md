@@ -19,7 +19,7 @@ Ensure you have Docker and Docker Compose installed on your machine. You can ins
 
 # Clone the Repository:
 ```bash
- git https://github.com/mdsarfraz2002/Farmer-Support-ChatBot.git
+ git clone https://github.com/mdsarfraz2002/Farmer-Support-ChatBot.git
  cd Farmer-Support-ChatBot
 ```
 # Build and Run the Containers:
