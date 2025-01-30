@@ -13,7 +13,7 @@ In this repository, you'll find a Flask backend (`chat.py`), a React frontend (`
 To run the project using Docker Compose, follow the steps below:
 
 # Prerequisites
-Ensure you have Docker and Docker Compose installed on your machine. You can install Docker and Docker Compose.
+Please make sure you have Docker and Docker Compose installed on your machine. You can install Docker and Docker Compose.
 
 ## Running the Application
 
